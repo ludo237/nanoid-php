@@ -4,6 +4,12 @@ All notable changes to `ludo237/nanoid-php` will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## v1.0.0 (2024-05-08)
+
+### Added
+
+- [feat: initial commit](https://gitlab.com/ludo237/nanoid-php/-/commit/4405a4026b17ca034bc4e615abe8b795fa9c5efc)
+
 ## v1.0.1 (2024-05-08)
 
 ### Changed

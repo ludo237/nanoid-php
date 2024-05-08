@@ -22,7 +22,7 @@
         "php": ">=8.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^11.1",
+        "pestphp/pest": "^2.34",
         "phpstan/phpstan": "^1.10"
     },
     "archive": {
@@ -50,6 +50,9 @@
     },
     "extra": {},
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }

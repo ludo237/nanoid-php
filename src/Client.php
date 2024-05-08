@@ -1,16 +1,18 @@
 <?php
+
 namespace Ludo237\Nanoid;
 
 use Ludo237\Nanoid\Concerns\CoreInterface;
 use Ludo237\Nanoid\Cores\SecureCore;
+use Random\RandomException;
 
 class Client
 {
+    private const int DEFAULT_SIZE = 21;
+    private const string DEFAULT_ALPHABET = '_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-';
     private string $alphabet;
     private int $size;
     private CoreInterface $core;
-    private const int DEFAULT_SIZE = 21;
-    private const string DEFAULT_ALPHABET = '_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-';
 
     public function __construct(string $alphabet = self::DEFAULT_ALPHABET)
     {
@@ -33,7 +35,7 @@ class Client
         return $this;
     }
 
-    public function core(CoreInterface $core) : self
+    public function core(CoreInterface $core): self
     {
         $this->core = $core;
 
@@ -41,7 +43,7 @@ class Client
     }
 
     /**
-     * @throws \Random\RandomException
+     * @throws RandomException
      */
     public function generate(): string
     {

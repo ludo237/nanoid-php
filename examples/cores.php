@@ -5,7 +5,7 @@ use Ludo237\Nanoid\Cores\UnsecureCore;
 
 require __DIR__.'/../vendor/autoload.php';
 
-$nano = new Client("0123456789abcdefghijklmnopqrstuvwxyz");
+$nano = new Client('0123456789abcdefghijklmnopqrstuvwxyz');
 
 $nanoId = $nano->generate();
 printf("%s\n", str_repeat('-', 64));

@@ -1,4 +1,5 @@
 <?php
+
 namespace Ludo237\Nanoid\Cores;
 
 use Ludo237\Nanoid\Concerns\CoreInterface;

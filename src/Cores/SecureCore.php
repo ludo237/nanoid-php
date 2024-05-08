@@ -3,16 +3,18 @@
 namespace Ludo237\Nanoid\Cores;
 
 use Ludo237\Nanoid\Concerns\CoreInterface;
+use Random\RandomException;
 
 class SecureCore implements CoreInterface
 {
     /**
-     * @throws \Random\RandomException
+     * @throws RandomException
      */
     public function random(int $size, string $alphabet): string
     {
         $len = strlen($alphabet);
         $mask = (2 << (int) (log($len - 1) / M_LN2)) - 1;
+
         /** @var int<1, max> $step */
         $step = (int) ceil(1.6 * $mask * $size / $len);
         $id = '';

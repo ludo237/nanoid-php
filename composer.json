@@ -22,6 +22,7 @@
         "php": ">=8.0"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.56",
         "pestphp/pest": "^2.34",
         "phpstan/phpstan": "^1.10"
     },

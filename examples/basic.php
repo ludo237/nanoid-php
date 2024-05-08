@@ -1,9 +1,10 @@
 <?php
+
 require __DIR__.'/../vendor/autoload.php';
 
 use Ludo237\Nanoid\Client;
 
-$nano = new Client("0123456789abcdefghijklmnopqrstuvwxyz");
+$nano = new Client('0123456789abcdefghijklmnopqrstuvwxyz');
 $size = 21;
 printf("%s\n", str_repeat('-', 64));
 $start = microtime(true);

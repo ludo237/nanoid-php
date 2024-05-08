@@ -12,6 +12,7 @@ describe('SecureCore', function () {
         expect($string)
             ->toBeString()
             ->and(strlen($string))
-            ->toBe(10);
+            ->toBe(10)
+        ;
     });
 });

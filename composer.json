@@ -1,0 +1,55 @@
+{
+    "name": "ludo237/nanoid-php",
+    "type": "library",
+    "description": "NanoId implementation for PHP",
+    "keywords": [
+        "nanoid",
+        "random",
+        "id",
+        "generator"
+    ],
+    "homepage": "https://github.com/ludo237/nanoid-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ludo237",
+            "email": "opensource@ludo237.com",
+            "homepage": "https://github.com/ludo237",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.1",
+        "phpstan/phpstan": "^1.10"
+    },
+    "archive": {
+        "exclude": [
+            "tests/",
+            "examples/",
+            ".gitignore",
+            ".editorconfig",
+            "*.md",
+            "*.yml",
+            "*.xml"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Ludo237\\Nanoid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ludo237\\Nanoid\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+    },
+    "extra": {},
+    "config": {
+        "sort-packages": true
+    }
+}

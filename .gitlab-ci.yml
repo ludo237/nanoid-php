@@ -116,6 +116,13 @@ php-cs-fixer:
 git::release:
   stage: .post
   image: registry.gitlab.com/6go/dx/docker/git:latest
+  needs:
+    - job: phpstan
+      artifacts: false
+    - job: pest
+      artifacts: false
+    - job: php-cs-fixer
+      artifacts: false
   variables:
     GIT_STRATEGY: clone
   before_script:

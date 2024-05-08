@@ -52,7 +52,7 @@ jobs:
           command: composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress
 
       - name: PHPStan
-      - uses: php-actions/phpstan@v3
+        uses: php-actions/phpstan@v3
         with:
           php_version: ${{ matrix.php }}
           level: max

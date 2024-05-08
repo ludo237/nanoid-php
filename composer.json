@@ -8,13 +8,13 @@
         "id",
         "generator"
     ],
-    "homepage": "https://github.com/ludo237/nanoid-php",
+    "homepage": "https://gitlab.com/ludo237/nanoid-php",
     "license": "MIT",
     "authors": [
         {
             "name": "Ludo237",
-            "email": "github@ludo237.com",
-            "homepage": "https://github.com/ludo237",
+            "email": "gitlab@ludo237.com",
+            "homepage": "https://gitlab.com/ludo237",
             "role": "Owner"
         }
     ],

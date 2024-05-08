@@ -64,7 +64,7 @@ phpstan:
     - job: composer::install
       artifacts: true
   script:
-    - php -d memory_limit=4G ./vendor/bin/phpstan analyse --error-format gitlab
+    - php -d memory_limit=4G ./vendor/bin/phpstan analyse --error-format gitlab --level=max src
 
 pest:
   stage: tests

@@ -13,9 +13,11 @@ class SecureCore implements CoreInterface
     {
         $len = strlen($alphabet);
         $mask = (2 << (int) (log($len - 1) / M_LN2)) - 1;
+        /** @var int<1, max> $step */
         $step = (int) ceil(1.6 * $mask * $size / $len);
         $id = '';
         while (true) {
+            /** @var int[] $bytes */
             $bytes = unpack('C*', \random_bytes($step));
             foreach ($bytes as $byte) {
                 $byte &= $mask;

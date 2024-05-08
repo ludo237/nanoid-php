@@ -12,7 +12,7 @@ class Client
     private const int DEFAULT_SIZE = 21;
     private const string DEFAULT_ALPHABET = '_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-';
 
-    public function __construct($alphabet = self::DEFAULT_ALPHABET)
+    public function __construct(string $alphabet = self::DEFAULT_ALPHABET)
     {
         $this->alphabet = $alphabet;
         $this->size = self::DEFAULT_SIZE;
